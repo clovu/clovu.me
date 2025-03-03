@@ -1,13 +1,13 @@
 ---
-title: The Challenge of Clipboard Writing in Safari  
-date: 2025-03-03 14:10:52  
-lang: en-US  
-duration: 10min  
-pid: 0c14b5c5eca8994709886f1ce46d45cbdd70  
-tags: TS  
-categories: TypeScript  
+title: The Challenge of Clipboard Writing in Safari
+date: 2025-03-03 14:10:52
+lang: en-US
+duration: 10min
+pid: 0c14b5c5eca8994709886f1ce46d45cbdd70
+tags: TS
+categories: TypeScript
 lastEdit: 2025-03-03 14:10:52
-draft: false  
+draft: false
 ---
 
 [[toc]]
@@ -113,9 +113,10 @@ async function onCopy(event: React.MouseEvent<HTMLImageElement>, sticker: Sticke
 }
 ```
 
-**Final Result**  
-With this workaround, clipboard writing now works smoothly in Safari!  
+**Final Result**
+With this workaround, clipboard writing now works smoothly in Safari!
 
-Thank you for reading! Feel free to try the project:  
-- Live Demo: [MiHoYo Sticker](https://mhy-sticker.ctong.top/)  
-- GitHub Repo: [Clover-You/mihoyo-sticker](https://github.com/Clover-You/mihoyo-sticker)  
+Thank you for reading! Feel free to try the project:
+
+- Live Demo: [MiHoYo Sticker](https://mhy-sticker.ctong.top/)
+- GitHub Repo: [Clover-You/mihoyo-sticker](https://github.com/Clover-You/mihoyo-sticker)
