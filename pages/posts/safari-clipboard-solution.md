@@ -120,4 +120,4 @@ async function onCopy(event: React.MouseEvent<HTMLImageElement>, sticker: Sticke
 
 欢迎大家使用我的项目 [MiHoYo Sticker](https://mhy-sticker.ctong.top/)
 
-同样的，它也被开源在了 [GitHub](https://github.com/Clover-You/mihoyo-sticker)
+同样的，它也被开源在了 [GitHub](https://github.com/clovu/mihoyo-sticker)

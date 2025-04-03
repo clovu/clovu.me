@@ -6,12 +6,12 @@
   "packageManager": "pnpm@9.13.1",
   "author": "Clover You <cloveryou02@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/Clover-You/moji-blog#readme",
+  "homepage": "https://github.com/clovu/moji-blog#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Clover-You/moji-blog.git"
+    "url": "git+https://github.com/clovu/moji-blog.git"
   },
-  "bugs": "https://github.com/Clover-You/moji-blog/issues",
+  "bugs": "https://github.com/clovu/moji-blog/issues",
   "keywords": [
     "blog"
   ],

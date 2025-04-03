@@ -119,4 +119,4 @@ With this workaround, clipboard writing now works smoothly in Safari!
 Thank you for reading! Feel free to try the project:
 
 - Live Demo: [MiHoYo Sticker](https://mhy-sticker.ctong.top/)
-- GitHub Repo: [Clover-You/mihoyo-sticker](https://github.com/Clover-You/mihoyo-sticker)
+- GitHub Repo: [clovu/mihoyo-sticker](https://github.com/clovu/mihoyo-sticker)

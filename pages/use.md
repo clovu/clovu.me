@@ -7,8 +7,8 @@ pid: 82df2772b5f82c45aa6aeab82aa5b1e8b77a
 lastEdit: 2025-04-03 13:36:39
 ---
 
-- [My Profile GitHub](https://github.com/Clover-You/config)
-- [My dotfiles GitHub](https://github.com/Clover-You/dotfiles)
+- [My Profile GitHub](https://github.com/clovu/config)
+- [My dotfiles GitHub](https://github.com/clovu/dotfiles)
 
 ## Browser
 

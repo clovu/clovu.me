@@ -57,7 +57,7 @@ mode = "light"
 items = [
   { url = "/about", label = "About" },
   { url = "/", label = "Blog" },
-  { url = "https://github.com/Clover-You", iconClass = "icon-[mdi--github]", target = "_blank" },
+  { url = "https://github.com/clovu", iconClass = "icon-[mdi--github]", target = "_blank" },
 ]
 ```
 
