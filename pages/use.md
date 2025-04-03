@@ -66,8 +66,10 @@ It must be Google Chrome, no need for further words!
 ## CLI
 
 - [zsh](https://zsh.org/) - Shell
-- [pnpm](https://pnpm.io/) - Node Package Manager, similar to npm
-- [eslint](https://eslint.org/) - Linter & Formatter
+- [PNPM](https://pnpm.io/) - Node Package Manager, similar to npm
+- [NVM](https://github.com/nvm-sh/nvm) - Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+- [Corepack](https://github.com/nodejs/corepack) Zero-runtime-dependency package acting as bridge between Node projects and their package managers
+- [Eslint](https://eslint.org/) - Linter & Formatter
 - [Prettier](https://prettier.io/) - Teamwork use
 
 ## Game
