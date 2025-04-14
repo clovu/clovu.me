@@ -2,10 +2,29 @@
 title: Clover You
 author: Clover
 date: 2024-04-10 16:55:27
-lastEdit: 2024-09-11 13:34:02
+lastEdit: 2025-04-14 14:55:02
 ---
 
 Dear Friends,
+
+Hello, My name is **<ruby lang="en">Clover You<rp>(</rp><rt>/ˈkloʊvər juː/</rt><rp>)</rp></ruby>**, and my Chinese name is **尤小可**. You can call me "Clover" or "小可", a full-stack developer familiar with languages like Java, TypeScript, and Golang.
+
+<hr class="w-[50px] mx-auto my-8 border-[#7d7d7d4d]"/>
+
+Find me on
+
+[GitHub](https://github.com/clovu) [Bluesky](https://bsky.app/profile/clovu.me) [Bilibili](https://space.bilibili.com/348402900)
+
+Or mail me at <a href="mailto:hi@clovu.me"><span>hi<span class="icon-[mdi--alternate-email] align-middle"></span>clovu.me</span></a>
+
+<hr class="w-[50px] mx-auto my-8 border-[#7d7d7d4d]"/>
+
+Thank you again for visiting!
+
+Best regards,
+**Clover You**
+
+<!-- Dear Friends,
 
 Hello, my name is **Clover You**, and my Chinese name is **尤渔**. You can call me "Clover". Thank you for taking the time to visit my website.
 
@@ -30,7 +49,7 @@ Apart from coding, I enjoy playing the game **Genshin Impact**, listening to mus
 Thank you again for visiting!
 
 Best regards,
-**Clover You**
+**Clover You** -->
 
 <!--
 ---
