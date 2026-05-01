@@ -16,15 +16,16 @@ export function PostShell({ children, frontmatter, className }: PostShellProps) 
   return (
     <article className={className}>
       <header className="mb-10 space-y-4">
-        <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+        <h1 className="text-3xl font-semibold tracking-normal text-foreground sm:text-4xl">
+          {frontmatter.title}
+        </h1>
+
+        <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground opacity-50">
           {formattedDate ? <time dateTime={getPostDateTimeAttribute(frontmatter.date)}>{formattedDate}</time> : null}
           {frontmatter.duration ? <span> · {frontmatter.duration}</span> : null}
           {/* {frontmatter.author ? <span>{frontmatter.author}</span> : null} */}
         </div>
 
-        <h1 className="text-3xl font-semibold tracking-normal text-foreground sm:text-4xl">
-          {frontmatter.title}
-        </h1>
 
         {frontmatter.description ? (
           <p className="text-lg text-muted-foreground">
