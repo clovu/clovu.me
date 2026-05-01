@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 
 import { formatPostDate, getPostDateTimeAttribute } from '../post-date'
 import type { PostFrontmatter } from '../post-types'
+import { PostWrapper } from './post-wrapper'
 
 interface PostShellProps {
   children: ReactNode
@@ -42,9 +43,9 @@ export function PostShell({ children, frontmatter, className }: PostShellProps) 
         ) : null}
       </header>
 
-      <div className="mdx-content">
+      <PostWrapper>
         {children}
-      </div>
+      </PostWrapper>
     </article>
   )
 }

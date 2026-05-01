@@ -11,6 +11,7 @@ objc
 rlib
 serde
 shadcn
+Shiki
 skiped
 sqlx
 staticlib
