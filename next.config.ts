@@ -1,7 +1,9 @@
+import createMDX from '@next/mdx'
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
     remotePatterns: [
       { hostname: 'gravatar.com' },
@@ -14,4 +16,27 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default nextConfig
+const withMDX = createMDX({
+  extension: /\.mdx$/,
+  options: {
+    remarkPlugins: [
+      'remark-gfm',
+      'remark-frontmatter',
+      ['remark-mdx-frontmatter', { name: 'frontmatter' }],
+    ],
+    rehypePlugins: [
+      [
+        'rehype-pretty-code',
+        {
+          theme: {
+            light: 'vitesse-light',
+            dark: 'nord',
+          },
+          keepBackground: false,
+        },
+      ],
+    ],
+  },
+})
+
+export default withMDX(nextConfig)
