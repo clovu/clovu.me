@@ -42,19 +42,6 @@ export function parsePostFrontmatter(input: unknown, slug: string): PostFrontmat
   }
 }
 
-/**
- * Returns a sortable timestamp, keeping undated or invalid posts at the end.
- */
-export function getPostTimestamp(frontmatter: PostFrontmatter) {
-  if (!frontmatter.date) {
-    return 0
-  }
-
-  const timestamp = Date.parse(frontmatter.date)
-
-  return Number.isNaN(timestamp) ? 0 : timestamp
-}
-
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
 }

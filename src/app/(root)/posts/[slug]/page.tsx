@@ -48,7 +48,7 @@ export default async function PostPage({ params }: PostPageProps) {
   const { Content, frontmatter } = post
 
   return (
-    <PostShell frontmatter={frontmatter}>
+    <PostShell frontmatter={frontmatter} className="m-auto max-w-[65ch] leading-7 text-base" >
       <Content />
     </PostShell>
   )

@@ -9,7 +9,7 @@ export interface PostFrontmatter {
   author?: string
   /** Broad content buckets, usually used for archive or navigation views. */
   categories: string[]
-  /** Publish date as provided by frontmatter. Kept as a string for author-friendly formats. */
+  /** Publish date as an ISO date, ISO datetime, or legacy local datetime string. */
   date?: string
   /** Short summary used by metadata tags, feeds, and list previews. */
   description?: string

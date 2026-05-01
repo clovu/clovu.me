@@ -1,32 +1,40 @@
 import Link from 'next/link'
 
+import { formatPostMonthDay, getPostDateTimeAttribute } from '@/features/posts/post-date'
 import { listPublishedPosts } from '@/features/posts/post-source'
 
 export default async function PostsPage() {
   const posts = await listPublishedPosts()
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-8 sm:py-16 space-y-12">
-      <article>
-        <div className="m-auto max-w-[65ch] leading-7 text-base">
-          <ul>
-            {posts.map((post) => (
-              <PostListItem
-                key={post.slug}
-                slug={post.slug}
-                title={post.frontmatter.title}
-                date={post.frontmatter.date}
-                duration={post.frontmatter.duration}
-              />
-            ))}
-          </ul>
-        </div>
-      </article>
-    </div>
+    <article>
+      <div className="m-auto max-w-[65ch] leading-7 text-base">
+        <ul>
+          {posts.map((post) => (
+            <PostListItem
+              key={post.slug}
+              slug={post.slug}
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
+              duration={post.frontmatter.duration}
+            />
+          ))}
+        </ul>
+      </div>
+    </article>
   )
 }
 
-function PostListItem({ slug, title, date, duration }: { slug: string; title: string; date?: string; duration?: string }) {
+interface PostListItemProps {
+  date?: string
+  duration?: string
+  slug: string
+  title: string
+}
+
+function PostListItem({ slug, title, date, duration }: PostListItemProps) {
+  const formattedDate = formatPostMonthDay(date)
+
   return (
     <Link
       href={`/posts/${slug}`}
@@ -39,7 +47,7 @@ function PostListItem({ slug, title, date, duration }: { slug: string; title: st
         </div>
 
         <div className="flex gap-2 items-center">
-          {date ? <span>{date}</span> : null}
+          {formattedDate ? <time dateTime={getPostDateTimeAttribute(date)}>{formattedDate}</time> : null}
           {duration ? (
             <span className="text-sm whitespace-nowrap opacity-50">
               · {duration}

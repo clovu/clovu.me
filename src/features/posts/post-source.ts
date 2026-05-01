@@ -2,7 +2,8 @@ import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { cache } from 'react'
 
-import { extractRawFrontmatter, getPostTimestamp, parsePostFrontmatter } from './post-frontmatter'
+import { getPostDateTimestamp } from './post-date'
+import { extractRawFrontmatter, parsePostFrontmatter } from './post-frontmatter'
 import { getPostSlugFromFileName } from './post-slug'
 import type { PostSummary } from './post-types'
 
@@ -24,7 +25,7 @@ export const listPosts = cache(async ({ includeDrafts = false }: ListPostsOption
   return posts
     .filter((post): post is PostSummary => Boolean(post))
     .filter((post) => includeDrafts || !post.frontmatter.draft)
-    .sort((left, right) => getPostTimestamp(right.frontmatter) - getPostTimestamp(left.frontmatter))
+    .sort((left, right) => getPostDateTimestamp(right.frontmatter.date) - getPostDateTimestamp(left.frontmatter.date))
 })
 
 /** Returns posts that should be visible on public routes. */

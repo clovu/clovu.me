@@ -1,20 +1,24 @@
 import type { ReactNode } from 'react'
 
+import { formatPostDate, getPostDateTimeAttribute } from '../post-date'
 import type { PostFrontmatter } from '../post-types'
 
 interface PostShellProps {
   children: ReactNode
   frontmatter: PostFrontmatter
+  className?: string
 }
 
-export function PostShell({ children, frontmatter }: PostShellProps) {
+export function PostShell({ children, frontmatter, className }: PostShellProps) {
+  const formattedDate = formatPostDate(frontmatter.date)
+
   return (
-    <article className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-16">
+    <article className={className}>
       <header className="mb-10 space-y-4">
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-          {frontmatter.date ? <time dateTime={frontmatter.date}>{frontmatter.date}</time> : null}
-          {frontmatter.duration ? <span>{frontmatter.duration}</span> : null}
-          {frontmatter.author ? <span>{frontmatter.author}</span> : null}
+          {formattedDate ? <time dateTime={getPostDateTimeAttribute(frontmatter.date)}>{formattedDate}</time> : null}
+          {frontmatter.duration ? <span> · {frontmatter.duration}</span> : null}
+          {/* {frontmatter.author ? <span>{frontmatter.author}</span> : null} */}
         </div>
 
         <h1 className="text-3xl font-semibold tracking-normal text-foreground sm:text-4xl">
