@@ -3,7 +3,7 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   images: {
     remotePatterns: [
       { hostname: 'gravatar.com' },
@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
 }
 
 const withMDX = createMDX({
-  extension: /\.mdx$/,
+  extension: /\.mdx?$/,
   options: {
     remarkPlugins: [
       'remark-gfm',

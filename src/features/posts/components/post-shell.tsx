@@ -1,8 +1,9 @@
 import type { ReactNode } from 'react'
 
+import { MarkdownWrapper } from '@/features/markdown/components/markdown-wrapper'
+
 import { formatPostDate, getPostDateTimeAttribute } from '../post-date'
 import type { PostFrontmatter } from '../post-types'
-import { PostWrapper } from './post-wrapper'
 
 interface PostShellProps {
   children: ReactNode
@@ -44,9 +45,9 @@ export function PostShell({ children, frontmatter, className }: PostShellProps) 
         ) : null}
       </header>
 
-      <PostWrapper>
+      <MarkdownWrapper>
         {children}
-      </PostWrapper>
+      </MarkdownWrapper>
     </article>
   )
 }

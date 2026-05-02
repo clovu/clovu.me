@@ -4,8 +4,8 @@ import { ThemeSwitcher } from './theme-switcher'
 
 const NAVIGATION_ITEMS = [
   { href: '/posts', label: 'Blog' },
-  { href: '/#about', label: 'About' },
-  { href: '/#use', label: 'Use' },
+  { href: '/', label: 'About' },
+  { href: '/use', label: 'Use' },
 ] as const
 
 export function Header() {
