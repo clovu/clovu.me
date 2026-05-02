@@ -8,7 +8,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 export function HomeTechStack() {
   return (
-    <Card className="bg-background h-67">
+    <Card className="bg-background h-73">
       <CardContent className="relative h-full">
         <div className="flex justify-between items-center z-2 mb-3">
           <h3 className="text-sm font-medium">Tech Stack</h3>

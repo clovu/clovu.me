@@ -12,7 +12,7 @@ function TimelineBadge({ year, children }: { year: string; children: React.React
 
 export function AboutAuthor() {
   return (
-        <Card className="bg-background h-67">
+        <Card className="bg-background h-73">
             <CardContent>
                 <h3 className="text-sm font-medium mb-3">About Me</h3>
                 <div className="space-y-3 text-sm text-muted-foreground leading-relaxed mb-4">
