@@ -151,3 +151,7 @@
   from { transform: rotate(340deg) scale(0.8); }
   to { transform: rotate(360deg) scale(1); }
 }
+
+.animate-spin-once {
+  animation: spin-once 0.4s ease-out;
+}
