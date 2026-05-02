@@ -6,7 +6,6 @@ import { SectionHeading } from '@/components/section-heading'
 import { AboutAuthor } from '@/components/about-author'
 import { FeaturedRepos } from '@/components/featured-repos'
 import { HomeTechStack } from '@/components/home-tech-stack'
-import { ThemeSwitcher } from '@/components/theme-switcher'
 
 
 export const metadata: Metadata = {
@@ -16,10 +15,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-8 sm:py-16 space-y-12">
-      <div className="fixed bottom-4 right-4 z-50 sm:top-4 sm:right-4 sm:bottom-auto">
-        <ThemeSwitcher />
-      </div>
+    <div className="w-full max-w-5xl mx-auto px-4 pb-8 sm:pb-16 space-y-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <IntroSection />
         <IntroCode />
