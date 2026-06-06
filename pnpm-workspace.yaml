@@ -1,0 +1,5 @@
+allowBuilds:
+  msw: true
+  sharp: true
+  simple-git-hooks: true
+  unrs-resolver: true
